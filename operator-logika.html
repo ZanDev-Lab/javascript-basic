@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      // operator && (DAN)
+      let result = true;
+      let originResult = true;
+      document.writeln(result && originResult);
+      document.writeln('</br>');
+
+      result = true;
+      originResult = false;
+      document.writeln(result && originResult);
+      document.writeln('</br>');
+
+      result = false;
+      originResult = true;
+      document.writeln(result && originResult);
+      document.writeln('</br>');
+      result = false;
+      originResult = false;
+      document.writeln(result && originResult);
+      document.writeln('</br>');
+      //Operator || (OR)
+      result = true;
+      originResult = true;
+      document.writeln(result || originResult);
+      document.writeln('</br>');
+
+      result = false;
+      originResult = true;
+      document.writeln(result || originResult);
+      document.writeln('</br>');
+
+      result = true;
+      originResult = false;
+      document.writeln(result || originResult);
+      document.writeln('</br>');
+
+      result = false;
+      originResult = false;
+      document.writeln(result || originResult);
+      document.writeln('</br>');
+
+      //contoh dalam penalaran operator &&
+
+      const nilaiUjian = 60;
+      const nilaiAbsen = 65;
+
+      const lulusUjian = nilaiUjian > 65;
+      const lulusAbsen = nilaiAbsen > 70;
+
+      lulus = lulusUjian && lulusAbsen;
+      document.writeln('<p>' + 'Apakah lulus dengan Nilai Ujian = ' + nilaiUjian + ' dan Nilai Absen = ' + nilaiAbsen + ' = ' + lulus + '</p>');
+    </script>
+  </body>
+</html>

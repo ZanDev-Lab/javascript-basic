@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator IN di javascript</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstname: 'Mochammad Fauzan Fadilah',
+        lastname: 'fuad',
+      };
+      const result = 'firstname' in person; //true
+      document.writeln(`Apakah operator ini dimiliki oleh variable person : ${result}`);
+      //penalaran /percabangan operator in
+      const me = {
+        'apa mimpimu': 'menjadi seorang programmer',
+        siapakamu: 'saya seorang programmer handal',
+      };
+      if ('apa mimpimu' in me) {
+        alert(`sukses ${me['apa mimpimu']}`);
+      } else {
+        alert('Hello!');
+      }
+      //PERINGATAN In operator hanya bisa mengecek apakah sebuah property atau index ada atau tidak
+      //jadi walaupun nilai property atau index nya undifined atau null, maka tetap akan ada
+      //contoh
+      const you = {
+        'Harapanmu menjadi': 'Seorang programmer',
+        'Nikah Usia': undefined,
+        'Calonmu yaitu': 'Iis Siti Aisyah',
+      };
+      if ('Nikah Usia' in you) {
+        alert(`Usia : ${you['Nikah Usia']}`);
+      } else {
+        alert('Yasudahlah');
+      }
+    </script>
+  </body>
+</html>

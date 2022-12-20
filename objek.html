@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe data Objek Javascript</title>
+  </head>
+  <body>
+    <script>
+      const x = {};
+      //mengubah atau menambahkan data
+      x['nama'] = 'Mochammad Fauzan Fadilah';
+      x['alamat'] = 'Cirebon';
+      x['semester'] = 4;
+      x['no hp'] = 085723126649;
+      console.table(x);
+      //menghapus data array
+      delete x['no hp'];
+      console.table(x);
+      //
+      console.info(`Nama : ${x.nama}`);
+      console.info(`Alamat : ${x.alamat}`);
+      console.info(`semester : ${x.semester}`);
+      console.info(`No HP : ${x['nohp']}`);
+    </script>
+  </body>
+</html>

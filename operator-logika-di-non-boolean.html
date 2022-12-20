@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika di Non Booolean</title>
+  </head>
+  <body>
+    <script>
+      //OPERATOR OR (||)
+      console.info('hello' || ''); //truthy nya hello
+      console.info('' || []); //[] truthy array kosong
+      console.info('0' || 'NOL'); //string kosong '0' sebagai truthy awal yang diambil
+      console.info(0 || 'NOL'); //Nol  sebagai truthya
+      console.info(null || 'NULL'); // string null sebagai truthy
+      console.info(undefined || 'UNDIFINED'); // string UNDIFINED sebagai truthy
+      console.info(0 || false); //falsytruthy akhir yang diambil yaiti false
+      //pengaplikasian penalaran
+      const person = {
+        firstname: 'Mochammad Fauzan',
+        lastname: 'Fadilah',
+      };
+      const name = person.firstname || person.lastname; //diakan mengambil data firstname tetapi jika firstname nya tidak ada data atau kosong maka dia akan otomatis mengganti ke data lastname
+      console.info(name);
+      //OPERATOR && (AND)
+      console.info('hello' && ''); //Mengambil nilai falsey yaitu '' (string kosong)
+      console.info('' && []); // mengambil nilai falsey yaitu '' (string kosong) ...
+      console.info('0' && 'NOL'); // mengambil nilai falsey atau mengambil nilai truthy yang sama tapi  bagian akhir yaitu 'NOL'
+      console.info(0 && 'NOL'); // mengambil nilai falsey yaitu 0
+      console.info(null && 'NULL'); // mengambil nilai falsey yaitu null
+      console.info(undefined && 'UNDIFINED'); //mengambil nilai falsey yaitu undefined
+      console.info(0 && false); //mengambil nilai falsey awal yaitu 0
+    </script>
+  </body>
+</html>

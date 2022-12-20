@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Javascript</title>
+  </head>
+  <body>
+    <script>
+      let arr0 = [];
+      let array1 = ['Mochammad', 'Fauzan', 'Fadilah'];
+      console.table(array1);
+
+      const array2 = [];
+      array2.push('Iis Siti Aisyah');
+      array2.push('Pengagum Rahasia', 'Semoga jodoh!');
+      console.table(array2);
+      //mengupdate atau mengubah data array
+      array2[2] = 'Mochammad Fauzan Fadilah';
+      console.table(array2);
+      console.info(array2.length);
+      //melihat data di indeks yang dicari
+      console.info(array2[0]);
+      console.info(array2[1]);
+      console.info(array2[2]);
+
+      //menambah data array didalam array
+      array2.push(['aku sayang', 'kamu', 'tidak ada batas']);
+      console.table(array2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 Jenis Scope</title>
+  </head>
+  <body>
+    <script>
+      //scope merupakan area akses sebuah data
+      //ada dua jenis scope di javascript ialah global scope, dan local scope
+      //setiap kita membuat function, maka kita akan membuat local scope untuk function tersebut
+      //data diglobal scope bisa diakses dari scope , namun data local scope  hanya bisa di akses   di  local scope tersebut atau discope   local bawahnya (dalam kasus function dalam function)
+
+      let counter = 0; //global scope
+      function hitMe() {
+        //localscope
+        counter++;
+      }
+
+      hitMe();
+      console.info(counter);
+    </script>
+  </body>
+</html>

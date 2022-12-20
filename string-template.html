@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template Javascript</title>
+  </head>
+  <body>
+    <script>
+      const name = 'Mochammad Fauzan fadilah';
+      const firstName = 'Mochammad';
+      const middleName = 'Fauzan';
+      const lastName = 'Fadilah';
+      const template = `Name : ${firstName} ${middleName} ${lastName} `;
+      document.writeln(template);
+      console.info(template);
+      document.writeln('</br>');
+      //Kode Expression di string Template
+      const lulus = 90;
+      const template2 = `Name : ${name},    lulus :  ${lulus > 80}`;
+      document.writeln(template2);
+      console.info(template2);
+      document.writeln('</br>');
+
+      //Multiline String Template
+      let multiLineString = `Mochammad Fauzan Fadilah,
+Front-End Developer,
+Informatic Engeneering,
+STMIK IKMI CIREBON.
+      `;
+      document.writeln('<pre>');
+      document.writeln(multiLineString);
+      document.writeln('</pre>');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String Number</title>
+  </head>
+  <body>
+    <script>
+      //problem
+      const value1 = '1';
+      const value2 = 1;
+      const sum = value1 + value2;
+      document.writeln(`Total : ${sum}`);
+
+      document.writeln('</br>');
+      //fix
+      const value3 = parseInt('1');
+      const value4 = 1;
+      const sum1 = value3 + value4;
+      document.writeln(`Total : ${sum1}`);
+      document.writeln('</br>');
+
+      document.writeln(`bilangan bulat : ${parseInt('1.2')}`);
+      document.writeln('</br>');
+      document.writeln(`bilangan floating : ${parseFloat('1.45')}`);
+      document.writeln('</br>');
+      document.writeln(`bilangan number : ${Number('1.3')}`);
+
+      document.writeln('</br>');
+
+      //konversi dari number ke string
+      const x = 1;
+      const y = 1;
+      const z = x.toString() + y.toString();
+      document.writeln(`Total : ${z}`);
+      document.writeln('</br>');
+      // not a number (NaN)
+      document.writeln(`bilangan bulat : ${parseInt('salah')}`);
+      document.writeln('</br>');
+      document.writeln(`bilangan float : ${parseFloat('1.2sal')}`);
+      document.writeln('</br>');
+      document.writeln(`bilangan number : ${Number('1.a')}`);
+      document.writeln('</br>');
+    </script>
+  </body>
+</html>
